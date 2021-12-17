@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3, h4, h5, h6 { 
+	    font-weight: normal; 
+        }
+        a { 
+	    text-decoration: none; 
+        }
+        .head-bar{
+            display: flex;
+            height: 50px;
+            justify-content: space-between;
+            line-height: 50px;
+            /* align-items: center; */
+        }
+        .head-bar p{
+            flex: 2;
+            text-align: center;
+        }
+        .head-bar .head-lf{
+            flex: 1;
+        }
+        .head-bar .head-rt{
+            flex: 1;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+        .head-bar .head-rt a{
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            height: 35px;
+            width: 70px;
+            margin-right: 20px;
+        }
+        .nav-bar{
+            display: flex;
+            height: 50px;
+            align-items: center;
+        }
+        .nav-bar a {
+            flex: 1;
+            
+        }
+        .mid{
+            background-color: red;
+            height: 150px;
+            
+        }
+        .event{
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+        }
+        .event-head{
+            flex: 1;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .event-body{
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+        }
+        .event-body-top{
+            flex: 1;
+            background-color: #ccc;
+        }
+        .event-body-foot{
+            background-color: blue;
+            flex: 1;
+            display: flex;
+            
+        }.event-body-foot div{
+            flex: 1;
+        }
+        .foot-lf{background-color: yellow;flex: 1;}
+        .foot-rt{background-color: red;flex: 1;}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="head-bar" style="background-color: red;">
+            <div class="head-lf" style="background-color: green;">
+                <a href="">拼多多<img src="" alt=""></a>
+            </div>
+            <p>0.1元包邮抢16包清风面纸巾</p>
+            <div class="head-rt" style="background-color: green;">
+                <a href="">前往购买</a>
+            </div>
+        </div>
+        <div class="nav-bar" style="background-color: #ccc;">
+            <a href="">首页</a>
+            <a href="">商家入驻</a>
+            <a href="">多多火车票</a>
+            <a href="">帮助中心</a>
+        </div>
+        <div class="mid"></div>
+        <div class="event">
+            <div class="event-head">
+                <h3>精彩活动</h3>
+                <a href="#">查看更多></a>
+            </div>
+            <div class="event-body">
+                <div class="event-body-top"></div>
+                <div class="event-body-foot">
+                    <div class="foot-lf"></div>
+                    <div class="foot-rt"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
