@@ -16,6 +16,30 @@
         a { 
 	    text-decoration: none; 
         }
+        @media screen and (max-width:300px){
+            #main{
+                background-color: #ccc;
+                display: flex;
+                flex-direction: column;
+                height: 500px;              
+            }
+        }
+        @media screen and (min-width:300px) and (max-width:960px){
+            #main{
+                background-color: #ccc;
+                display: flex;
+                flex-direction: column;
+                height: 600px;
+            }
+        }
+        @media screen and (min-width:960px){
+            #main{
+                background-color: #ccc;
+                display: flex;
+                flex-direction: column;
+                height: 800px;
+            }
+        }
         .head-bar{
             display: flex;
             height: 50px;
@@ -92,7 +116,7 @@
 </head>
 <body>
     <div id="main">
-        <div class="head-bar" style="background-color: red;">
+        <div class="head-bar" style="background-color: red; flex: 1;">
             <div class="head-lf" style="background-color: green;">
                 <a href="">拼多多<img src="" alt=""></a>
             </div>
@@ -101,14 +125,14 @@
                 <a href="">前往购买</a>
             </div>
         </div>
-        <div class="nav-bar" style="background-color: #ccc;">
+        <div class="nav-bar" style="background-color: #ccc; flex: 1;">
             <a href="">首页</a>
             <a href="">商家入驻</a>
             <a href="">多多火车票</a>
             <a href="">帮助中心</a>
         </div>
-        <div class="mid"></div>
-        <div class="event">
+        <div class="mid" style="flex: 3;"></div>
+        <div class="event" style="flex: 5;">
             <div class="event-head">
                 <h3>精彩活动</h3>
                 <a href="#">查看更多></a>
